@@ -1,11 +1,28 @@
-Dear 
-1-Please first copy the .env.example to .env 
-Database name:atm
-2-After running default commands,we'll get 
-*php artisan migrate
-*php artisan db:seed
-3-Please start with this Url:http://127.0.0.1:8000/verify
-4-Please Take the data in seeders as a refrence & it's an example
-  'pin' => '123456',
-            'card_number' => '12345678901234',
-6-Sorry for poor design :D
+De<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+This project runs with Laravel version 9.
+
+## Getting started
+
+Assuming you've already installed on your machine: [XAMPP](https://www.apachefriends.org/),(PHP >= 8.1.6), [Laravel](https://laravel.com), [Composer](https://getcomposer.org) and NPM [Node.js](https://nodejs.org).
+
+ bash
+# install dependencies
+composer install
+npm install
+
+# create .env file and generate the application key
+copy .env.example .env
+php artisan key:generate
+
+ bash
+# create Database (atm) on your machine and then run this command
+php artisan migrate --seed
+
+Then launch the server:
+ bash
+php artisan serve
+
+
+The Laravel sample project is now up and running! Access it at http://localhost:8000/verify
+bash
+Please Take the data in seeders as a reference, 'pin' => '123456', 'card_number' => '12345678901234',
